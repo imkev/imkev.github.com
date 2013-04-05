@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 description: "This is my first post."
-category: [lessons, beginner] 
+categories: [lessons, beginner] 
 tags: []
 ---
 {% include JB/setup %}
