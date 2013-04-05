@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 description: "This is my first post."
-category: notes
+category: notes, testing
 tags: [how-to, jekyll]
 ---
 {% include JB/setup %}
