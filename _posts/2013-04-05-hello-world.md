@@ -36,3 +36,9 @@ Atx方式
 > 这里木有换行，   
 > 在这里换行了。
 > > 内部嵌套
+
+
+Bash中可以使用echo来进行输出。
+	$ echo 'Something'
+	$ echo -e '\tSomething\n'
+
