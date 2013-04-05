@@ -8,4 +8,4 @@ tags: []
 {% include JB/setup %}
 
 
-Hellow kevin, this is the first post.
+Hellow kevin, 这是我的第一次尝试。
