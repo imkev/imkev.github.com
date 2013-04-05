@@ -9,8 +9,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Kevin Luo
-tagline: imKev
+title : imKev's Blog
+tagline: Welcome to my new blog!
 author :
   name : Kevin Luo
   email : kevin.luo@outlook.com
