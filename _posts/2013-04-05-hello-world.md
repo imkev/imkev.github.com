@@ -42,3 +42,12 @@ Bash中可以使用echo来进行输出。
 	$ echo 'Something'
 	$ echo -e '\tSomething\n'
 
+    
+    title : My Blog =)
+    
+    author :
+      name : Name Lastname
+      email : blah@email.test
+      github : username
+      twitter : username
+
