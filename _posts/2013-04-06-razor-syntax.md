@@ -83,23 +83,23 @@ tags: [MVC3]
 
 2.使用逻辑处理  
 
-	@{  
-	    if (xx)
-	    {
-	    	//do something
-	    }
-	    else
-	    {
-	    	//do anything
-	    }
-	 }  
+	@{
+		if (xx)
+		{
+
+		}
+		else
+		{
+			
+		}
+	 }
 
 3.在@\{\.\.\. \}内部使用html标记  
-	
-	@{  
-	    <p>text</P>
-	    <div>div1</div>
- 	 }  
+
+	@{
+		<p>text</P>
+		<div>div1</div>
+ 	 }
 
 4.在@\{\.\.\.\}内部输出文本  
 利用@:进行单行输出:  
