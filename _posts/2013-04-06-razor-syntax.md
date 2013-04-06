@@ -45,7 +45,8 @@ tags: [MVC3]
     }
 
 另外  
-1使用局部变量, Razor不支持访问修饰符public, private等, 这个没任何意义  
+
+1.使用局部变量, Razor不支持访问修饰符public, private等, 这个没任何意义  
 在单行上定义局部变量  
 
 	@{ var total = 7; }  
@@ -98,7 +99,7 @@ tags: [MVC3]
 
 很简单, 对吧  
 
-3在@\{\.\.\.\}内部使用html标记  
+3.在@\{\.\.\.\}内部使用html标记  
 
 	@{
 		<p>text</p>
