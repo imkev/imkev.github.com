@@ -44,9 +44,7 @@ tags: [MVC3]
         Var y = 20;  
     }
 
-另外  
-
-1.使用局部变量, Razor不支持访问修饰符public, private等, 这个没任何意义  
+## 使用局部变量, Razor不支持访问修饰符public, private等, 这个没任何意义  
 在单行上定义局部变量  
 
 	@{ var total = 7; }  
@@ -86,7 +84,7 @@ tags: [MVC3]
 		
 	@var1 @var2 @myObject.xx  
 
-2.使用逻辑处理  
+## 使用逻辑处理  
 
 	@{
 		if (xx)
@@ -97,18 +95,14 @@ tags: [MVC3]
 		}
 	 }
 
-很简单, 对吧  
-
-3.在@\{\.\.\.\}内部使用html标记  
+## 在@\{\.\.\.\}内部使用html标记  
 
 	@{
 		<p>text</p>
 		<div>div1</div>
  	 }
 
-也很简单吧
-
-4.在@\{\.\.\.\}内部输出文本  
+## 在@\{\.\.\.\}内部输出文本  
 利用@:进行单行输出:  
 
 	@{
@@ -126,7 +120,7 @@ tags: [MVC3]
 	     </text>
 	 }
 
-5.在@\{\.\.\.\}内部使用注释  
+## 在@\{\.\.\.\}内部使用注释  
 
 	@{
 	    //单行注释
@@ -164,14 +158,14 @@ tags: [MVC3]
 	}
 	输出: <!-- time now: 4/9/2011 12:01 -->>
 
-6.类型转换  
+## 类型转换  
 
-AsInt\(\), IsInt\(\)  
-AsBool\(\),IsBool\(\)  
-AsFloat\(\),IsFloat\(\)  
-AsDecimal\(\),IsDecimal\(\)  
-AsDateTime\(\),IsDateTime\(\)  
-ToString\(\)  
+	AsInt(), IsInt()  
+	AsBool(),IsBool()  
+	AsFloat(),IsFloat()  
+	AsDecimal(),IsDecimal()  
+	AsDateTime(),IsDateTime()  
+	ToString()  
 
 例子:  
 
@@ -181,7 +175,7 @@ ToString\(\)
 	  
 	<p> i = @i.AsInt() </p> <!-- 输出 i = 10 --> 
 
-7.使用循环  
+## 使用循环  
 
 	<!--方式1-->
 	@for (int i = 10; i < 11; i++)
@@ -198,4 +192,4 @@ ToString\(\)
 	  
 	<!--while同理-->
 
-到此结束\! 呼呼  
+到此结束 呼呼  
