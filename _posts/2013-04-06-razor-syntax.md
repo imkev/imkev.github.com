@@ -3,7 +3,7 @@ layout: post
 title: "Razor Syntax"
 description: ""
 category: Tech
-tags: [MVC3,Tech]
+tags: [MVC3]
 ---
 {% include JB/setup %}
 
