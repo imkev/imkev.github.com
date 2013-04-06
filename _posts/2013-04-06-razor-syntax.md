@@ -9,20 +9,19 @@ tags: []
 
 # 基础
 
-所有以 @开头 或 @{ /* 代码体 */ }  (在@与{直接不得添加任何空格) 的部分代码都会被ASP.NET引擎进行处理.  
-在 @{ /*代码体*/ } 内的代码每一行都必须以";"结束,如  
+所有以 @开头 或 @{ /* 代码体 */ }  (在@与{直接不得添加任何空格) 的部分代码都会被ASP.NET引擎进行处理. 在 @{ /*代码体*/ } 内的代码每一行都必须以";"结束,如  
 
 	@{
 	    var i = 10;
 	    var y = 20;
-	}
+	 }
 
 而 @xxx 则不需要以";"作为结束符,如  
-	
+
 	@i 输出 10
 	@y; 输出 20;
 
-<span style="color:red">代码区内字母分大小写.</span>  
+<b><span style="color:red">代码区内字母分大小写.</span></b>  
 字符类型常量必须用""括起例如: @{ string str = "my string"; }
 
 
@@ -35,22 +34,20 @@ tags: []
 	<p>text@i xx</p> 输出 text@i xx
 
 单行语法:  
-
-	@{ var I = 10; }
+@{ var I = 10; }
 
 多行语法:  
 
 	@{ 
-	     var I = 10;
-	     Var y = 20;
+	    var I = 10;
+	    Var y = 20;
 	 }
+
 
 1. 使用局部变量,Razor不支持访问修饰符(public,private等,这个没任何意义)
 在单行上定义局部变量  
-
-	@{ var total = 7; }
-	@{ var myMessage = "Hello World";}
-
+@{ var total = 7; }
+@{ var myMessage = "Hello World";}
 在多行上定义局部变量  
 	
 	@{
@@ -65,9 +62,8 @@ tags: []
 	<p>The value of myMessage is: @myMessage</p>
 
 注意:变量拼接输出  
-	@{ var i = 10; }
- 	<p>text @i text</p> 将输出 text 10 text  
-
+@{ var i = 10; }
+<p>text @i text</p> 将输出 text 10 text  
 但是如果你想要输出 text10text 呢?  
 
 	<p>text@{@i}text</p>即可
@@ -96,10 +92,10 @@ tags: []
 
 3. 在@{... }内部使用html标记  
 	
-@{
+	@{
 	     <p>text</P>
 	     <div>div1</div>
- }
+ 	 }
 
 4. 在@{...}内部输出文本  
 利用@:进行单行输出:  
