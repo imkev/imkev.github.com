@@ -43,9 +43,9 @@ tags: []
 
 
 1. 使用局部变量, Razor不支持访问修饰符(public,private等,这个没任何意义)
-在单行上定义局部变量  
-@\{ var total = 7; \}
-@\{ var myMessage = "Hello World";\}
+在单行上定义局部变量    
+@\{ var total = 7; \}  
+@\{ var myMessage = "Hello World";\}  
 在多行上定义局部变量  
 	
 	@{
@@ -55,7 +55,7 @@ tags: []
 	 }
 
 在上下文中使用变量  
-	
+
 	<p>The value of your account is: @total </p>
 	<p>The value of myMessage is: @myMessage</p>
 
@@ -69,7 +69,7 @@ tags: []
 	<p>text@itext</p> 将输出 text@itext
 	<p>text @itext</p> 将报错
 
-如果是输出的是变量的方法名则不需要用@\{\}括住也可生效,但注意在@字符前记得加空格如:  
+如果是输出的是变量的方法名则不需要用@\{\}括住也可生效,<b><span style="color:red">但注意在@字符前记得加空格</span></b> 如:  
 
 	<p>text @i.ToString()text</p>
 
@@ -104,7 +104,7 @@ tags: []
 	     @:@i 也可输出变量
 	 }
 
-利用<text />进行多行输出:  
+利用\<text /\>进行多行输出:  
 
 	@{
 	     <text>
