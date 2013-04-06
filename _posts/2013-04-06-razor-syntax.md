@@ -44,8 +44,9 @@ tags: [MVC3]
 
 1. 使用局部变量, Razor不支持访问修饰符\(public, private等, 这个没任何意义\)
 在单行上定义局部变量  
-@\{ var total = 7; \}  
-@\{ var myMessage = "Hello World";\}  
+	@{ var total = 7; }  
+	@{ var myMessage = "Hello World";}  
+
 在多行上定义局部变量  
 	
 	@{
@@ -80,21 +81,21 @@ tags: [MVC3]
 2. 使用逻辑处理  
 
 	@{
-	     if (xx)
-	     {
-	     //do something
-	     }
-	     else
-	     {
-	     //do anything
-	     }
+	    if (xx)
+	    {
+	    	//do something
+	    }
+	    else
+	    {
+	    	//do anything
+	    }
 	 }
 
 3. 在@\{\.\.\. \}内部使用html标记  
 	
 	@{
-	     <p>text</P>
-	     <div>div1</div>
+	    <p>text</P>
+	    <div>div1</div>
  	 }
 
 4. 在@\{\.\.\.\}内部输出文本  
@@ -146,7 +147,7 @@ tags: [MVC3]
 	     */
 	 }
 
-若在@\{ \.\.\. \}内部使用<\!-- -->注释,则会输出到页面之中,如果在<\!-- -->  内部使用@变量,则会被处理  
+若在@\{ \.\.\. \}内部使用<\!\-\- \-\->注释,则会输出到页面之中,如果在<\!\-\- \-\->  内部使用@变量, 则会被处理  
 
 	@{
 	 <!-- time now: @DateTime.Now.ToString() -->
