@@ -2,8 +2,8 @@
 layout: post
 title: "Razor Syntax"
 description: ""
-category: ASP.NET
-tags: [ASP.NET]
+category: Tech
+tags: [MVC3,Tech]
 ---
 {% include JB/setup %}
 
