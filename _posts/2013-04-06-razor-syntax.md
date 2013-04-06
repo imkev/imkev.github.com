@@ -46,7 +46,7 @@ tags: [MVC3]
 
 另外  
 
-1.使用局部变量, Razor不支持访问修饰符\(public, private等, 这个没任何意义\)
+1.使用局部变量, Razor不支持访问修饰符public, private等, 这个没任何意义  
 在单行上定义局部变量  
 
 	@{ var total = 7; }  
@@ -82,12 +82,14 @@ tags: [MVC3]
 
 	<p>text @i.ToString()text</p>
 
-使用变量对象可直接写: @var1 @var2 @myObject\.xx  
+使用变量对象可直接写: 
+		
+	@var1 @var2 @myObject.xx  
 
 2.使用逻辑处理  
 
 	@{
-		if (xx\)
+		if (xx)
 		{
 		}
 		else
@@ -97,14 +99,14 @@ tags: [MVC3]
 
 很简单, 对吧  
 
-3.在@\{\.\.\. \}内部使用html标记  
+3.在@\{\.\.\.\}内部使用html标记  
 
 	@{
 		<p>text</p>
 		<div>div1</div>
  	 }
 
-也很简单吧？
+也很简单吧
 
 4.在@\{\.\.\.\}内部输出文本  
 利用@:进行单行输出:  
