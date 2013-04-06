@@ -2,25 +2,25 @@
 layout: post
 title: "Razor Syntax"
 description: ""
-category: 
-tags: []
+category: ASP.NET
+tags: [ASP.NET]
 ---
 {% include JB/setup %}
 
 # 基础
 
-所有以 @开头 或 @\{ /\* 代码体 \*/ \}  \(在@与\{直接不得添加任何空格\) 的部分代码都会被ASP.NET引擎进行处理. 在 @\{ /\*代码体\*/ \} 内的代码每一行都必须以";"结束,如  
+所有以 @开头 或 @\{ /\* 代码体 \*/ \}  \(在@与\{直接不得添加任何空格\) 的部分代码都会被ASP.NET引擎进行处理\. 在 @\{ /\*代码体\*/ \} 内的代码每一行都必须以";"结束, 如  
 
 	@{
 	    var i = 10;
 	    var y = 20;
 	 }
 
-而 @xxx 则不需要以";"作为结束符,如  
+而 @xxx 则不需要以";"作为结束符, 如  
 @i 输出 10  
 @y; 输出 20;  
-<b><span style="color:red">代码区内字母分大小写.</span></b>  
-字符类型常量必须用""括起例如: @{ string str = "my string"; }
+<b><span style="color:red">代码区内字母分大小写.</span></b>
+字符类型常量必须用""括起例如: @\{ string str = "my string"; \}
 
 
 # 注意
@@ -42,8 +42,8 @@ tags: []
 	 }
 
 
-1. 使用局部变量, Razor不支持访问修饰符(public,private等,这个没任何意义)
-在单行上定义局部变量    
+1. 使用局部变量, Razor不支持访问修饰符\(public, private等, 这个没任何意义\)
+在单行上定义局部变量  
 @\{ var total = 7; \}  
 @\{ var myMessage = "Hello World";\}  
 在多行上定义局部变量  
@@ -60,8 +60,10 @@ tags: []
 	<p>The value of myMessage is: @myMessage</p>
 
 注意:变量拼接输出  
-@\{ var i = 10; \}
-<p>text @i text</p> 将输出 text 10 text  
+
+	@{ var i = 10; }  
+	<p>text @i text</p> 将输出 text 10 text  
+
 但是如果你想要输出 text10text 呢?  
 
 	<p>text@{@i}text</p>即可
@@ -73,7 +75,7 @@ tags: []
 
 	<p>text @i.ToString()text</p>
 
-使用变量对象可直接写: @var1 @var2 @myObject\.xx
+使用变量对象可直接写: @var1 @var2 @myObject\.xx  
 
 2. 使用逻辑处理  
 
