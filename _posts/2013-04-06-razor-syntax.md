@@ -36,10 +36,10 @@ tags: [MVC3]
 
 多行语法:  
 
-	@{ 
+	@\{ 
 	    var I = 10;
 	    Var y = 20;
-	 }
+	\}
 
 
 1. 使用局部变量, Razor不支持访问修饰符\(public, private等, 这个没任何意义\)
@@ -78,7 +78,18 @@ tags: [MVC3]
 
 使用变量对象可直接写: @var1 @var2 @myObject\.xx  
 
+2. 使用逻辑处理  
 
+	@{
+	    if (xx)
+	    {
+	    	//do something
+	    }
+	    else
+	    {
+	    	//do anything
+	    }
+	 }
 
 3. 在@\{\.\.\. \}内部使用html标记  
 	
